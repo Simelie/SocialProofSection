@@ -19,3 +19,39 @@ html {
 body {
   font-size: 1.5rem;
   font-family: var(--font-family); }
+
+img {
+  width: 100%; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container-grid {
+  max-width: 1100px;
+  max-height: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "ba ba ba" "title white rev" "title white rev" "p white rev" "comment comment comment"; }
+
+.container-title h1 {
+  display: block;
+  grid-area: title;
+  font-size: 4rem;
+  color: var(--primary-dark-magenta);
+  font-weight: 700;
+  padding-bottom: 1rem; }
+
+.container-title .title-paragraph {
+  grid-area: p;
+  font-size: 1.3rem;
+  color: var(--dark-grayish-magenta); }
+
+.container-review {
+  grid-area: rev; }
+
+.container-comment {
+  grid-area: comment; }
