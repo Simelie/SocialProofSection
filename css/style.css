@@ -35,21 +35,23 @@ em {
   background-position-x: -200px, 270px;
   padding: 10rem 2rem;
   border-bottom: 1px solid gray;
-  max-width: 1100px;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 400px 400px 400px;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "title white rev" "comment comment comment"; }
+  grid-template-areas: "title title rev" "comment comment comment"; }
 
 .container-title {
   grid-area: title; }
   .container-title h1 {
     display: block;
+    width: 390px;
     font-size: 4rem;
     color: var(--primary-dark-magenta);
     font-weight: 900;
     padding-bottom: 1rem; }
   .container-title .title-paragraph {
+    width: 420px;
     font-size: 1.3rem;
     color: var(--dark-grayish-magenta);
     font-weight: 500;
@@ -75,12 +77,12 @@ em {
     font-weight: 700;
     color: var(--primary-dark-magenta);
     font-size: 1.2rem; }
+  .container-review .container-content-review:first-child {
+    position: relative;
+    left: -60px; }
   .container-review .container-content-review:nth-child(2) {
     position: relative;
-    left: 30px; }
-  .container-review .container-content-review:nth-child(3) {
-    position: relative;
-    left: 60px; }
+    left: -30px; }
 
 /*comments*/
 .container-comment {
@@ -121,8 +123,8 @@ em {
 
 .block-comment:nth-child(2) {
   position: relative;
-  top: 15px; }
+  top: 20px; }
 
 .block-comment:nth-child(3) {
   position: relative;
-  top: 30px; }
+  top: 40px; }
