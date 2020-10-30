@@ -86,3 +86,11 @@ em {
       color: var(--white);
       font-size: 1.3rem;
       line-height: 2rem; }
+
+.block-comment:nth-child(2) {
+  position: relative;
+  top: 15px; }
+
+.block-comment:nth-child(3) {
+  position: relative;
+  top: 30px; }
