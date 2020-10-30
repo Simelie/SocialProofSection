@@ -30,8 +30,12 @@ em {
   align-items: center; }
 
 .container-grid {
+  background: url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  padding: 10rem 2rem;
+  border-bottom: 1px solid gray;
   max-width: 1100px;
-  max-height: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
