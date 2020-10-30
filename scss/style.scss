@@ -26,13 +26,15 @@
     display: block;
     font-size: 4rem;
     color: var(--primary-dark-magenta);
-    font-weight: 700;
+    font-weight: 900;
     padding-bottom: 1rem;
   }
 
   .title-paragraph {
     font-size: 1.3rem;
     color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 2rem;
   }
 }
 /*review*/
@@ -40,7 +42,6 @@
   grid-area: rev;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   .container-content-review {
     display: flex;
@@ -48,6 +49,7 @@
     background: var(--light-grayish-magenta);
     height: 50px;
     border-radius: 5px;
+    margin: 0.7rem 0;
   }
 
   .content-review-star {
@@ -81,6 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
 
   .block-comment {
     display: flex;
