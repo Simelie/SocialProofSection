@@ -14,11 +14,8 @@
   max-height: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "ba ba ba"
-    "title white rev"
-    "title white rev"
     "title white rev"
     "comment comment comment";
 }
@@ -38,11 +35,47 @@
     color: var(--dark-grayish-magenta);
   }
 }
-
+/*review*/
 .container-review {
   grid-area: rev;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container-content-review {
+    display: flex;
+    align-items: center;
+    background: var(--light-grayish-magenta);
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .content-review-star {
+    padding: 0 2rem;
+
+    img {
+      padding: 0 0.2rem;
+    }
+  }
+
+  .content-review-text {
+    font-weight: 700;
+    color: var(--primary-dark-magenta);
+    font-size: 1.2rem;
+  }
+
+  .container-content-review:nth-child(2) {
+    position: relative;
+    left: 30px;
+  }
+
+  .container-content-review:nth-child(3) {
+    position: relative;
+    left: 60px;
+  }
 }
 
+/*comments*/
 .container-comment {
   grid-area: comment;
   display: flex;
