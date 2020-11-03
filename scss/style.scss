@@ -23,7 +23,7 @@
   border-bottom: 1px solid gray;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "title title rev"
@@ -45,7 +45,7 @@
   grid-area: title;
   h1 {
     display: block;
-    width: 390px;
+    width: 50%;
     font-size: 4rem;
     color: var(--primary-dark-magenta);
     font-weight: 900;
@@ -59,7 +59,7 @@
   }
 
   .title-paragraph {
-    width: 420px;
+    width: 50%;
     font-size: 1.3rem;
     color: var(--dark-grayish-magenta);
     font-weight: 500;
@@ -145,7 +145,7 @@
     background: var(--primary-dark-magenta);
     border-radius: 7px;
     padding: 3rem;
-    width: 350px;
+    width: 30%;
 
     @include xs {
       width: 90%;
