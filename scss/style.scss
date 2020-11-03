@@ -32,14 +32,13 @@
   @include xs {
     background: url(../images/bg-pattern-top-mobile.svg),
       url(../images/bg-pattern-bottom-mobile.svg);
-    background-position-x: 0, 0;
+    padding: 5rem 2rem 10rem 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "title"
       "rev"
       "comment";
-    background: none; // A finalise
   }
 }
 .container-title {
